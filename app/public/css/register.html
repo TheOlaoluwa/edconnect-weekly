@@ -1,0 +1,84 @@
+<head>
+    <link rel="stylesheet" href="C:\Users\TheOlaoluwa\edconnect-weekly\app\public\project-explorer\css\bootstrap.min.css">
+</head>
+<header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-primary">
+        <a class="navbar-brand text-white mb-3" href="#">Project Explorer</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <form name="searchForm" class="form-inline">
+                <input type="text" class="form-control" placeholder="Search Projects" />
+                <button class="btn btn-outline-light ml-2" type="submit">Search</button>
+            </form>
+            <button class="btn text-white disabled mr-auto mb-3" type="submit">Submit</button>
+        </div>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link disabled text-white" href="#" tabindex="-1" aria-disabled="true">Signup</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled text-white" href="#" tabindex="-1" aria-disabled="true">Login</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</header>
+<form>
+    <div class="form-row mx-auto justify-content-centre w-50">
+        <h3>Sign up</h3>
+    </div>
+    <div class="form-row mx-auto justify-content-centre w-50">
+        <div class="form-group col-md-6">
+            <label for="firstName">First Name</label>
+            <input type="text" name="firstName" class="form-control" id="firstName" placeholder="First name">
+        </div>
+        <div class="form-group col-md-6">
+            <label for="lastName">Last Name</label>
+            <input type="text" name="lastName" class="form-control" id="lastName" placeholder="Last name">
+        </div>
+    </div>
+
+    <div class="form-row mx-auto justify-content-centre w-50">
+        <div class="form-group col-md-6">
+            <label for="emailAddress">Email Address</label>
+            <input type="email" name="email" class="form-control" id="emailAddress" placeholder="Your Email address">
+        </div>
+        <div class="form-group col-md-6">
+            <label for="password">Password</label>
+            <input type="password" name="password" class="form-control" id="password" placeholder="Your password">
+        </div>
+    </div>
+
+    <div class="form-row mx-auto justify-content-centre w-50">
+        <div class="form-group col-md-6">
+            <label for="program">Program</label>
+            <select id="program" name="program" class="form-control">
+                <option selected>Choose...</option>
+                <option>...</option>
+            </select>
+        </div>
+        <div class="form-group col-md-3">
+            <label for="matriculationNumber">Matriculation Number</label>
+            <input type="text" name="matricNumber" class="form-control" id="matriculation number"
+                placeholder="e.g 162020">
+        </div>
+        <div class="form-group col-md-3">
+            <label for="graduationYear">Graduation Year</label>
+            <select id="graduationYear" name="graduationYear" class="form-control">
+                <option selected>Choose...</option>
+                <option>...</option>
+            </select>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Sign Up</button>
+</form>
+
+<footer class="container">
+    <div class="d-flex justify-content-end bg-light">
+        <p>Project Explorer 2020&copy; - <strong>Edconnect</strong></p>
+    </div>
+</footer>

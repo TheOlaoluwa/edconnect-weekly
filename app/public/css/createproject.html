@@ -1,0 +1,78 @@
+<head>
+    <link rel="stylesheet" href="C:\Users\TheOlaoluwa\edconnect-weekly\app\public\project-explorer\css\bootstrap.min.css">
+</head>
+<header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-primary">
+        <a class="navbar-brand text-white mb-3" href="#">Project Explorer</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <form name="searchForm" class="form-inline">
+                <input type="text" class="form-control" placeholder="Search Projects" />
+                <button class="btn btn-outline-light ml-2" type="submit">Search</button>
+            </form>
+            <button class="btn text-white disabled mr-auto mb-3" type="submit">Submit</button>
+        </div>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link disabled text-white" href="#" tabindex="-1" aria-disabled="true">Signup</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled text-white" href="#" tabindex="-1" aria-disabled="true">Login</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="form mx-auto justify-content-centre w-50">
+        <form>
+
+            <h1>Submit Project</h1>
+            <div class="form-row">
+                <div class="form-group col">
+                    <label for="projectName">Project Name</label>
+                    <input type="text" name="name" class="form-control" id="projectName"
+                        placeholder="Enter Project Name">
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group col">
+                    <label for="projectAbstract">Project Abstract</label>
+                    <textarea class="form-control" name="abstract" id="projectAbstract" rows="12">
+              </textarea>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group col">
+                    <label for="authors">Author(s)</label>
+                    <input type="text" name="authors" class="form-control" id="authors"
+                        placeholder="Enter author names (separated by commas)">
+                </div>
+
+            </div>
+
+            <div class="form-row">
+                <div class="form-group col">
+                    <label for="tags">Tag(s)</label>
+                    <input type="text" name="tags" class="form-control" id="tags"
+                        placeholder="Use # to tag project with different topics (e.g #javascript #mongodb">
+                </div>
+
+            </div>
+            <button type="submit" class="btn btn-primary">Continue</button>
+        </form>
+
+    </div>
+
+
+
+    <footer class="container">
+        <div class="d-flex justify-content-end bg-light">
+            <p>Project Explorer 2020&copy; - <strong>Edconnect</strong></p>
+        </div>
+    </footer>

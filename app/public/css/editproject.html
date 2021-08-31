@@ -1,0 +1,109 @@
+<head>
+    <link rel="stylesheet" href="C:\Users\TheOlaoluwa\edconnect-weekly\app\public\project-explorer\css\bootstrap.min.css">
+</head>
+<header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-primary">
+        <a class="navbar-brand text-white mb-3" href="#">Project Explorer</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <form name="searchForm" class="form-inline">
+                <input type="text" class="form-control" placeholder="Search Projects" />
+                <button class="btn btn-outline-light ml-2" type="submit">Search</button>
+            </form>
+            <button class="btn text-white disabled mr-auto mb-3" type="submit">Submit</button>
+        </div>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link disabled text-white" href="#" tabindex="-1" aria-disabled="true">Signup</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled text-white" href="#" tabindex="-1" aria-disabled="true">Login</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container mt-4">
+        <h3><strong>Project 1</strong></h3>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <p>Created by<br />
+                    Oluwole Olaoluwa</p>
+            </div>
+            <div class="col">
+                <p>Date Created<br />
+                    31/08/2021</p>
+            </div>
+            <div class="col">
+                <p>Last Updated<br />
+                    31/08/2021</p>
+            </div>
+            <div class="col text-right">
+                <a href="viewproject.html" class="btn btn-primary">View Project</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h2><strong>Edit Project</strong></h2>
+                <hr />
+                <div class="form">
+                    <form name="editProject">
+                        <div class="form-group">
+                            <label>Project Name </label>
+                            <input type="text" name="name" class="form-control" />
+                        </div>
+                        <div class="form-group">
+                            <label>Project Abstract</label>
+                            <textarea type="text" name="abstract" class="form-control"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label>Authors </label>
+                            <input type="text" name="authors" class="form-control" />
+                        </div>
+                        <div>
+                            <label>Tag(s): <br /></label>
+                            <input type="text" name="tags" class="form-control mb-2" />
+                        </div>
+                        <div class="form-group">
+                            <button class="btn btn-primary" type="submit">Save</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <div class="col">
+                <h2><strong>Manage project Files</strong></h2>
+                <hr />
+                <div class="form-group">
+                    <label>Upload File: <br /></label>
+                    <input type="file" name="projectFile" class="form-control" /><br />
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        Project files
+                    </div>
+                    <div class="card-body">
+
+                        <p class="card-text">No file uploaded yet</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <footer class="container">
+        <div class="d-flex justify-content-end bg-light">
+            <p>Project Explorer 2020&copy; - <strong>Edconnect</strong></p>
+        </div>
+    </footer>
